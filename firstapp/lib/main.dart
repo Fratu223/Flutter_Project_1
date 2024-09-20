@@ -5,10 +5,13 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const Myapp({ super.key });
+  const MyApp({ super.key });
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
+    );
   }
 }
